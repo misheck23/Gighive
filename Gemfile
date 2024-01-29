@@ -2,6 +2,14 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.2.2"
+gem 'devise'
+gem 'pundit'
+gem 'sassc-rails'
+gem 'bootstrap', '~> 5.3.0'
+gem 'fontawesome5-rails'
+gem 'money-rails', '~> 1.12'
+
+
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
@@ -70,3 +78,7 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem "cssbundling-rails", "~> 1.3"
+
+gem "jsbundling-rails", "~> 1.2"
