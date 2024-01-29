@@ -8,8 +8,6 @@ gem 'sassc-rails'
 gem 'bootstrap', '~> 5.3.0'
 gem 'fontawesome5-rails'
 gem 'money-rails', '~> 1.12'
-gem 'logging-rails'
-
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.8"
