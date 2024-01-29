@@ -6,6 +6,9 @@ require "rails/all"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+# Require the logging-rails gem
+require 'logging-rails'
+
 module Gighive
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
@@ -18,5 +21,10 @@ module Gighive
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Use the Logging framework for logging
+    config.log_level = :info
+    config.logger = Logging.logger['Gighive']
+    config.logger.extend(ActiveSupport::Logger.broadcast(ActiveSupport::TaggedLogging.new(Rails.logger)))
   end
 end
