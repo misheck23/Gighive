@@ -2,7 +2,7 @@
         <!-- Responsive row -->
         <div class="row">
             <!-- Responsive column -->
-            <div class="col bg-body-tertiary">
+            <div class="col">
                 <!-- Your HTML code -->
                 <div class="signup-container" style="background-image: url('<%= image_path('signup.png') %>'); background-size: cover; background-repeat: no-repeat; background-position: center;">
                     <h2 class="text-center text-primary">Sign Up</h2>
@@ -10,7 +10,7 @@
                     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { class: 'form-horizontal' }) do |f| %>
                         <%= render "devise/shared/error_messages", resource: resource %>
 
-                        <div class="form-group">
+                        <div class="form-group bg-gradient">
                             <%= f.label :name, class: 'form-label' %>
                             <%= f.text_field :name, autofocus: true, class: 'form-control' %>
                         </div>
