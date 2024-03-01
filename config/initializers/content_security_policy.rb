@@ -2,7 +2,7 @@ Rails.application.configure do
     config.content_security_policy do |policy|
       policy.default_src :self, :https
       policy.font_src    :self, :https, :data, 'stackpath.bootstrapcdn.com', 'cdn.scite.ai'
-      policy.img_src     :self, :https, :data, 'gighive.tech', 'yourlocalvmip'  # Add your local VM IP or hostname
+      policy.img_src     :self, :https, :data, 'gighive.tech', '102.37.33.129'  # Add your local VM IP or hostname
       policy.object_src  :none
       policy.script_src  :self, :https, 'code.jquery.com', 'stackpath.bootstrapcdn.com'
       policy.style_src   :self, :https, 'stackpath.bootstrapcdn.com', 'cdn.scite.ai', :unsafe_inline
