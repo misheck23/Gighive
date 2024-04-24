@@ -433,21 +433,60 @@
 
 </div>
   <% end %>
-
-  <style>
-    /* Simple fade-in animation */
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-
-    .animated {
-      animation-name: fadeIn;
-      animation-duration: 1.5s;
-    }
-  </style>
 </div>
+
+<style>
+  /* Main color theme */
+  body, html {
+    color: #333; /* Dark Gray for text */
+    background-color: #f4f4f4; /* Light Gray background */
+  }
+
+  .navbar, .card-header, .bg-dark {
+    background-color: #503291; /* Deep Purple */
+    color: #ffffff;
+  }
+
+  .btn-primary {
+    background-color: #32a9a2; /* Vibrant Teal */
+    border-color: #32a9a2;
+  }
+
+  .btn-danger {
+    background-color: #FF6347; /* Tomato for critical actions like 'Delete' */
+    border-color: #FF6347;
+  }
+
+  .btn-secondary {
+    background-color: #6c757d; /* Bootstrap default secondary color */
+    border-color: #6c757d;
+  }
+
+  .badge-primary {
+    background-color: #32a9a2; /* Vibrant Teal for badges */
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ffffff; /* White for better readability in tables */
+  }
+
+  .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Soft box shadows for cards */
+  }
+
+  /* Animation for fadeIn effect */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .animated {
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+  }
+
+  /* Customizing the alert messages */
+  .alert-success {
+    background-color: #28a745; /* Bootstrap success color */
+  }
+</style>

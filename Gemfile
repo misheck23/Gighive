@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.2"
+ruby "3.2.3"
 gem 'devise'
 gem 'pundit'
 gem 'sassc-rails'
-gem 'bootstrap', '~> 5.3.0'
+#gem 'bootstrap', '~> 5.3.0'
 gem 'fontawesome5-rails'
 gem 'money-rails', '~> 1.12'
 
